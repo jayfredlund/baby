@@ -1,0 +1,6 @@
+- name: PayPal
+  url: https://www.paypal.com/paypalme/jayfredlund
+  image: /assets/img/paypal-qr-code.jpg
+- name: Venmo
+  url: https://venmo.com/jayfredlund
+  image: /assets/img/venmo-qr-code.jpg

@@ -18,15 +18,34 @@ title: Baby Fredlund Fischer
     <div class="image-section">
       <img src="/assets/img/onesie.jpg" alt="Landing" />
     </div>
-    <div class="button-section">
-      <div class="header-subsection">
-        <h1>Baby Fredlund Fischer</h1>
-        <h2>Arriving December 2025</h2>
-        <p>Visit our registries:</p>
+    <div class="content-section">
+      <div class="content-inner">
+        <div class="header-subsection">
+          <h1>Baby Fredlund Fischer</h1>
+          <h2>Arriving December 2025</h2>
+          <p>Visit our registries:</p>
+        </div>
+        <div class="registry-links">
+          {% for item in site.data.registry-links %}
+            <a href="{{ item.url }}">{{ item.name }}</a>
+          {% endfor %}
+        </div>
+        <div class="header-subsection">
+          <p>Or contribute any amount to our baby fund:</p>
+        </div>
+        <div class="baby-fund-links">
+          {% for item in site.data.baby-fund-links %}
+            <a href="{{ item.url }}" class="baby-fund-link">
+              <img src="{{ item.image }}" alt="{{ item.name }}" class="baby-fund-img" />
+              <span class="baby-fund-name">{{ item.name }}</span>
+            </a>
+          {% endfor %}
+        </div>
+        <div class="header-subsection">
+          <p>We truly appreciate your love and support!</p>
+          <p>❤️ Jay and Nate</p>
+        </div>
       </div>
-      {% for item in site.data.registry-links %}
-        <button>{{ item.name }}</button>
-      {% endfor %}
     </div>
   </div>
 </body>
