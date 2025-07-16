@@ -139,6 +139,7 @@ body {
   .image-section img {
     height: auto;
     max-height: 40vh;
+    object-position: 20% 20%;
   }
   .content-section {
     padding: 2em 0;
